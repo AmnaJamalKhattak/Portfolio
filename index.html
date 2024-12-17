@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Amna Jamal - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container-fluid">
+        <aside class="sidebar">
+            <div class="header-container">
+                <div id="logo">
+                    <i class="fa-solid fa-keyboard fa-2xl" style="color: #171717;"></i>
+                    <br>
+                    <h3>AJ.</h3>
+                </div>
+                <a href="#" id="closeNavBtn"><i class="fa-solid fa-arrow-right-from-bracket fa-flip-horizontal fa-xl" style="color: #171717;"></i></a>
+            </div>
+            
+            <div class="profile"> 
+                <img src="profilePic.jpeg" alt="Amna Jamal" class="rounded-circle">
+                <h2>Amna Jamal</h2>
+                <p>— <a href="index.html">Front End Developer</a> in Pakistan —</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <footer>
+                <p>&copy; 2024 All rights reserved </p>
+            </footer>
+        </aside>
+        <main class="content">
+            
+            <button id="openNav" class="open-nav-btn" style="display: none;"><i class="fa-solid fa-arrow-right-from-bracket fa-xl"></i></button> 
+            <section id="home">
+                <section id="home1" class="home-section active">
+                    <h2>Hi! <br>I am Amna</h2>
+                    <p>Welcome to my page</p>
+                    <br>
+                    
+                </section>
+                <section id="home2" class="home-section" >
+                    <h2>I am <br>a Developer</h2>
+                    <p> Home Page</p>
+                    
+                </section>
+            </section>
+
+            <section id="about">
+                <div>
+                    <span class="heading-meta">About Us</span>
+                    <h3>Who am I?</h3>
+                    <p><strong>Hi, I am Amna Jamal!</strong> On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
+                    <br>
+                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                </div>
+
+                <div id="projects">
+                    <p><strong>I have completed <br>multiple projects successfully!</strong></p>
+                    <button onclick="window.location.href='#work'" class="btn btn-light">View Projects</button>
+                </div>
+                
+            </section>
+
+            <section id="services"> 
+                <div>
+                    <span class="heading-meta">What do I do?</span>
+                    <h3>HERE ARE SOME OF MY <br>EXPERTISE</h3>
+                </div>
+                <div id="icons">
+                    <div id="Graphic">
+                        <i class="fa-solid fa-lightbulb fa-2xl" style="color: #74C0FC;"></i>
+                        <p>Graphic Design</p>
+                    </div>
+
+                    <div id="Web">
+                        <i class="fa-solid fa-globe fa-2xl" style="color: #a70101;"></i>
+                        <p>Web Design</p>
+                    </div>
+
+                    <div id="Software">
+                        <i class="fa-brands fa-uncharted fa-2xl" style="color: #FFD43B;"></i>
+                        <p>Software</p>
+                    </div>
+
+                    <div id="Application">
+                        <i class="fa-solid fa-mobile-screen-button fa-2xl" style="color: #7565a4;"></i>
+                        <p>Application</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <div>
+                    <span class="heading-meta">MY SPECIALITY</span>
+                    <h3>MY SKILLS</h3>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod doloremque ducimus fugiat quo, consectetur amet soluta illum necessitatibus consequuntur exercitationem sequi fugit ipsa omnis architecto voluptates mollitia vitae commodi reprehenderit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni id blanditiis libero voluptatum, consectetur dicta odio similique molestias, totam pariatur quam commodi consequuntur illo modi earum facilis eum nostrum ut.</p>
+                </div>
+
+                <div id="rangeSkills">
+                    <div id="s1">
+                        <label for="photoshop">Photoshop</label>
+                        <br>
+                        <input type="range" id="photoshop" min="0" max="100" value="75" step="1" disabled >
+                        <span id="skillValue">75%</span>
+                    </div>
+                    
+                    <div id="s2">
+                        <label for="jquery">jQuery </label>
+                        <br>
+                        <input type="range" id="jquery" min="0" max="100" value="60" step="1" disabled>
+                        <span id="skillValue">60%</span>
+                    </div>
+
+                    <div id="s3">
+                        <label for="html5">HTML5 </label>
+                        <br>
+                        <input type="range" id="html5" min="0" max="100" value="95" step="1" disabled>
+                        <span id="skillValue">95%</span>
+                    </div>
+
+                    <div id="s4">
+                        <label for="css3">CSS3: </label>
+                        <br>
+                        <input type="range" id="css3" min="0" max="100" value="90" step="1" disabled>
+                        <span id="skillValue">90%</span>
+                    </div>
+
+                    <div id="s5">
+                        <label for="wordpress">WordPress </label>
+                        <br>
+                        <input type="range" id="wordpress" min="0" max="100" value="85" step="1" disabled>
+                        <span id="skillValue">85%</span>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section id="education">
+                <div>
+                    <span class="heading-meta">EDUCATION</span>
+                    <h3>EDUCATION</h3>
+                </div>  
+                
+                <div class="education-section">
+                    <div class="education-item">
+                        <div class="education-header" onclick="toggleDropdown('olevels')">
+                            <h2>Olevels</h2>
+                            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="education-content" id="olevels">
+                            <ul>
+                                <li><b>Roots IVY International School</b></li>
+                                <li>2017-2019</li>
+                                <li>6A*s 2As</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-header" onclick="toggleDropdown('alevels')">
+                            <h2>Alevels</h2>
+                            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="education-content" id="alevels">
+                            <ul>
+                                <li><b>Beaconhouse Margalla Islamabad</b></li>
+                                <li>2019-2021</li>
+                                <li>2As 1B</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-header" onclick="toggleDropdown('bachelors')">
+                            <h2>Bachelors of Computer Science</h2>
+                            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="education-content" id="bachelors">
+                            <ul>
+                                <li><b>Comsats University Islamabad</b></li>
+                                <li>2021-2025</li>
+                                <li>3.3 CGPA</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-header" onclick="toggleDropdown('summer')">
+                            <h2>Summer Schools</h2>
+                            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="education-content" id="summer">
+                            <ul>
+                                <li><b>NUST</b></li>
+                                <li>2017</li>
+                                <li>Robotics</li>
+                                <br>
+                                <li><b>Harvard Pre-Collegiate Program</b></li>
+                                <li>2019</li>
+                                <li>Particle Physics</li>
+                                <br>
+                                <li><b>EdProgram</b></li>
+                                <li>2020</li>
+                                <li>Work ethics, Team management, Co-working, Planning, Shark Tank etc</li>
+                            </ul>
+                            
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section id="work">
+                <div>
+                    <span class="heading-meta">MY WORK</span>
+                    <h3>RECENT WORK</h3>
+                </div>  
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="carRental1.jpg" class="d-block w-100" alt="Car Rental Management System">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Car Rental System</h3>
+                                <p>Designed a system to work as an intermediate between the clients and the owners.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="hosp1.png" class="d-block w-100" alt="Hospital Management System">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Hospital Management System</h3>
+                                <p>Designed a management system with users in mind. Finding hospitals, Booking doctors, Online checkups made much easier.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="nadra1.jpg" class="d-block w-100" alt="Nadra Booking System">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Nadra Booking System</h3>
+                                <p>Designed to make Nadra appointments much hassle free, and offer at home services.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </section>
+
+
+            <section id="contact">
+                <div>
+                    <span class="heading-meta">GET IN TOUCH</span>
+                    <h3>CONTACT</h3>
+                </div> 
+                <div id="contactContainer">
+                    <div id="contactInformation">
+                        <div id="phoneNumber">
+                            <i class="fa-solid fa-phone fa-xl" style="color: #ffffff;"></i>
+                            
+                            <a href="+923005815816">    Call +92 300-581-5816</a>
+                        </div>
+                        <div id="linkedIn">
+                            <i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i>
+                            <a href="https://www.linkedin.com/">Follow me on LinkedIn</a>
+                        </div>
+                        <div id="facebook">
+                            <i class="fa-brands fa-square-facebook fa-xl" style="color: #ffffff;"></i>
+                            <a href="https://www.facebook.com/">Follow me on Facebook</a>
+                        </div>
+                        <div id="instagram">
+                            <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
+                            <a href="https://www.instagram.com/">Follow me on Instagram</a>
+                        </div>
+                        
+                    </div>
+                    <div id="contactForm">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <h3>Send me a message!</h3><br>
+                            <fieldset>
+                                
+                                <input type="hidden" name="access_key" value="35e5c5a7-ebef-41a0-9b62-1de82a0fdcad">
+
+                                <label for="name">Enter your name <sup>* required</sup></label><br>
+                                <input type="text" name="name" required id="name" placeholder="e.g, Amna Jamal"><br>
+                                <label for="email">Enter your Email <sup>* required</sup></label><br>
+                                <input type="email" name="email" required id="email" placeholder="Example@gmail.com"><br>
+                                <label for="comments">Send a message</label><br>
+                                <textarea name="message" placeholder="Your message here..."></textarea><br>
+                                <button type="submit">Submit</button>
+                            </fieldset>
+            
+                        </form>
+                        
+                    </div>
+                </div>
+                
+                
+            </section>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

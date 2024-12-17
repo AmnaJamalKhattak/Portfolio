@@ -1,0 +1,13 @@
+<section id="home">
+                <section id="home1" class="home-section active">
+                    <h2>Hi! <br>I am Amna</h2>
+                    <p>Welcome to my page</p>
+                    <br>
+                    <button onclick="window.location.href='portfolio.html'" class="btn btn-dark">View CV</button>
+                </section>
+                <section id="home2" class="home-section" >
+                    <h2>I am <br>a Developer</h2>
+                    <p> Home Page</p>
+                    <button onclick="window.location.href='portfolio.html'" class="btn btn-dark">View Portfolio</button>
+                </section>
+            </section>

@@ -1,0 +1,715 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    font-size: 16px; 
+}
+
+.container-fluid {
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; 
+    padding: 0;
+}
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 0; 
+    overflow-y: auto; 
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+.heading-meta {
+    margin-bottom: 15px;
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #999999;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+
+/*SIDE BAR*/
+#logo{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 0%;
+    margin-right: 0;
+    padding: 0;
+    
+}
+#logo h3{
+    color: 7d7d7de1;
+}
+#closeNavBtn{
+    color: rgb(255, 255, 255);
+    text-align: right;
+    text-decoration: none;
+    margin-right: 2%;
+    margin-top: -9%;
+    padding: 0;
+}
+.sidebar {
+    width: 25%;
+    height: 100%;
+    background-color: #d4d3d3b7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    box-shadow: 0.125rem 0 0.3125rem rgba(0,0,0,0.1);
+    overflow-y: auto;
+    position: relative; 
+    float: left;
+    z-index: 1; 
+}
+
+#openNav{
+    color: #171717;
+    text-align: left;
+    text-decoration: none;
+    margin-left: 2%;
+    margin-top: 2%;
+    border: none;
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+}
+#about,#services,#skills,#education,#work,#contact{
+    margin-left: 3%;
+}
+
+.sidebar a{
+    text-decoration: none;
+}
+.sidebar .profile {
+    text-align: center;
+    padding: 1.25rem;
+}
+
+.sidebar .profile img {
+    width: 100%;
+    max-width: 13.5rem; 
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10%;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar nav ul li {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 1.125rem; 
+    display: block;
+    padding: 0.625rem 1.25rem;
+    transition: background-color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #ccc;
+    color: black;
+    text-decoration: underline;
+}
+
+.sidebar footer {
+    text-align: center;
+    font-size: 0.75rem; 
+    background-color: #d4d3d3b7;
+    margin: 0;
+    padding: 1.25rem;
+    border: 0;
+}
+/*SIDE BAR ENDED*/
+
+
+
+
+
+/* Home Section CSS */
+.home-section {
+    text-align: center;
+    position: absolute;
+    
+    width: 75%; 
+    height: 100%;
+    padding-left: 0;
+    margin-left: 0%;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    opacity: 0;
+    transform: scale(1);
+    margin-bottom: 10%;
+}
+.home-section.active {
+    opacity: 1;
+    transform: scale(1);
+}
+#home1 h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5rem; 
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 5%;
+    text-align: left;
+    font-weight: 700;
+}
+#home1 p {
+    font-size: 2rem; 
+    color: #666;
+    text-align: left;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+#home2 h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: 5rem; 
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 5%;
+    text-align: left;
+    font-weight: 700;
+    
+}
+
+#home2 p {
+    font-size: 2rem; 
+    color: #cbcbcbe2;
+    text-align: left;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+/*
+#home1 button {
+    margin-top: 5%;
+    padding: 0.625rem 1.25rem;
+    font-size: 1.125rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: absolute; 
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+#home2 button {
+    margin-top: 5%;
+    padding: 0.625rem 1.25rem;
+    font-size: 1.125rem;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: absolute; 
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+
+.home-section button:hover {
+    background-color: #555;
+}
+
+.service-box {
+    border: 0.0625rem solid #ddd; 
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    text-align: center;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); 
+}
+
+.service-box .icon {
+    font-size: 3rem; 
+    color: #333;
+    margin-bottom: 0.625rem;
+}*/
+
+.profile h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 5%;
+    font-weight: 800;
+}
+
+.profile p {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: inherit;
+    color: #444444;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+#home1 {
+    width: 100%;
+    height: 100%;
+    background-image: url('home1img.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+#home2 {
+    width: 100%;
+    height: 100%;
+    background-image: url('home-2img.webp');
+    background-size: cover;
+    background-position: center;
+} 
+/* HOME SECTION ENDED */
+
+
+
+/*ABOUT SECTION*/
+#about {
+    position: relative; 
+    padding-top: 100vh; 
+    
+    
+}
+#about,#icons{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#projects{
+    width: 100%;
+    height: 35%;
+    padding: 4rem;
+    padding-top: 2rem;
+    background-color: #ef7924e2;
+    margin-top: 5%;
+    
+}
+/*ABOUT SECTION ENDED*/
+
+
+/* SERVICES SECTION*/
+#services{
+    margin-bottom: 10%;
+}
+#projects p{
+    margin-top: 0;
+    text-align: left;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#Graphic{
+    margin-left: 2rem;
+    border-bottom: 4px solid #74C0FC;
+    border-width: 3pt;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    float: left;
+}
+#Web{
+    margin-left: 2rem;
+    border-bottom: 4px solid #a70101;
+    border-width: 3pt;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    float: left;
+}
+#Software{
+    margin-left: 2rem;
+    border-bottom: 4px solid #FFD43B;
+    border-width: 3pt;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    float: left;
+}
+#Application{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-bottom: 4px solid #7565a4;
+    border-width: 3pt;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    float: left;
+}
+#icons p{
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* SERVICES SECTION ENDED*/
+
+
+/*SKILLS SECTION*/
+#rangeSkills{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#s1,#s2,#s3,#s4,#s5{
+    float: left;
+    padding: 2rem;
+}
+/*SKILLS SECTION ENDED*/
+
+
+/* EDUCATION SECTION*/
+.education-section {
+    max-width: 800px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.education-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    
+}
+
+.education-header {
+    background: #3498db;
+    
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px 4px 0 0;
+}
+
+.education-header h2 {
+    margin: 0;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.education-content {
+    display: none;
+    padding: 15px;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 4px 4px;
+}
+
+.education-section ul{
+    padding-left: 0.5rem;
+}
+/* EDUCATION SECTION ENDED*/
+
+
+/*WORK SECTION*/
+/*Carousel*/
+.carousel {
+    margin-top: 5%;
+    margin-left: 10%;
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    background-color: #444444b8;
+    height: 10rem;
+    width: 40rem;
+    
+}
+
+.carousel-caption h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+}
+.carousel-caption p{
+    color: #ffffff;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0px;
+    border-radius: 0%;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev:hover {
+    columns: rgba(255, 255, 255, 0.599);
+}
+
+.carousel-control-next:hover {
+    columns: rgba(255, 255, 255, 0.599);
+    
+}
+/*WORK SECTION ENDED*/
+
+
+/* CONTACT SECTION*/
+#contactContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 4rem;
+    margin-top: 3rem;
+    margin-bottom: 10%;
+}
+#contact{
+    margin-top: 10%;
+}
+#contactForm {
+    display: flex;
+    flex-direction: row; 
+    margin-top: 1rem;
+    margin-left: auto; 
+    margin-right: 4rem; 
+    background-color: #d4d3d3b7;
+    padding-top: 0rem; /* Reduced padding-top value */
+    padding: 4rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    width: fit-content; 
+}
+#contactForm button{
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-radius: 0.2rem;
+    position: relative;
+    align-content: center;
+}
+#contactForm label {
+    font-size: 1rem; 
+    margin-bottom: 0.5rem;
+}
+
+#contactForm input,
+#contactForm textarea {
+    font-size: 1rem; 
+    padding: 0.5rem; 
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    border: 1px #ccc;
+}
+
+sup{
+    color: red;
+}
+#contactInformation .fa-solid{
+    padding: 1rem;
+}
+#contactInformation .fa-brands{
+    padding: 1rem;
+}
+#phoneNumber{
+    display: flex;
+    flex-direction: row;
+    background-color: #3498db;
+    color: white;
+    width: fit-content;
+    padding: 1rem;
+    padding-right: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+}
+
+#facebook{
+    display: flex;
+    flex-direction: row;
+    background-color: #3498db;
+    color: white;
+    width: fit-content;
+    padding: 1rem;
+    padding-right: 3rem;
+    margin-bottom: 2rem;
+}
+#instagram{
+    display: flex;
+    flex-direction: row;
+    background-color: #3498db;
+    color: white;
+    width: fit-content;
+    padding: 1rem;
+    padding-right: 3rem;
+    margin-bottom: 2rem;
+}
+#linkedIn{
+    display: flex;
+    flex-direction: row;
+    background-color: #3498db;
+    color: white;
+    width: fit-content;
+    padding: 1rem;
+    padding-right: 3rem;
+    margin-bottom: 2rem;
+}
+#contactInformation a{
+    color: white;
+    text-decoration: none;
+}
+#contactInformation a:hover{
+    color: rgba(16, 25, 78, 0.763);
+}
+/* CONTACT SECTION ENDED*/
+
+
+/*RESPONSIVENESS*/
+/*media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .container-fluid {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        float: none;
+    }
+    .content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #home1 {
+        background-position: center;
+    }
+    #home2 {
+        background-position: center;
+    }
+    
+    /*home section for smaller screens */
+    .home-section h2,
+    .home-section p,
+    .home-section button {
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+    }
+     /*contact section for smaller screens */
+     #contactContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    #contactForm {
+        margin-right: 0;
+        margin-left: 0;
+        padding: 20px; 
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .sidebar {
+        /*sidebar styles for smaller screens */
+        padding: 20px; 
+    }
+    .content {
+        /*content styles for smaller screens */
+        padding: 20px; 
+    }
+    /*home section for even smaller screens */
+    .home-section h2 {
+        font-size: 3rem; 
+    }
+    .home-section p {
+        font-size: 1.5rem; 
+    }
+
+    /*contact section for even smaller screens */
+    #contactContainer {
+        padding: 10px; 
+    }
+    #contactForm {
+        width: 100%;
+    }
+    #phoneNumber,
+    #facebook,
+    #instagram,
+    #linkedIn {
+        width: 100%;
+        margin-bottom: 1rem; 
+    }
+}
+
